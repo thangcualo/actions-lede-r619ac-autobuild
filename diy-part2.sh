@@ -14,7 +14,7 @@
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
 # Modify default Hostname
-sed -i 's/OpenWrt/P&W_R619AC/g' package/base-files/files/bin/config_generate
+sed -i 's/OpenWrt/P2W_R619AC/g' package/base-files/files/bin/config_generate
 
 # Modify the version number
 sed -i "s/OpenWrt /SuperLangdon build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
