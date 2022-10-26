@@ -29,5 +29,8 @@ sed -i "s/OpenWrt /SuperLangdon build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g"
     echo 'CONFIG_KERNEL_BUILD_DOMAIN="GitHub Actions"' >>.config ||
     sed -i 's@\(CONFIG_KERNEL_BUILD_DOMAIN=\).*@\1$"GitHub Actions"@' .config
 
+# Unblock AcFun in Adbyby
+sed -i '/yximg/d' feeds/luci/applications/luci-app-adbyby-plus/root/etc/init.d/adbyby
+sed -i '/yximg/d' feeds/luci/applications/luci-app-adbyby-plus/root/etc/init.d/adbyby
 
 
